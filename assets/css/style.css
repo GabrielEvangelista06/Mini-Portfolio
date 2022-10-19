@@ -1,0 +1,141 @@
+body {
+  align-items: center;
+  background-image: url(../images/1039991.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #f3f3f3;
+  font-family: 'VT323', monospace;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  min-height: 100vh;
+}
+
+.cartao {
+  background-color: #070d12;
+  border: 2px solid #2b97fa;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 370px;
+}
+
+.cartao__minhas-informacoes {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.cartao__minhas-informacoes img {
+  border: 4px solid #e126d9;
+  border-radius: 50px;
+  height: 96px;
+  width: 96px;
+}
+
+.minhas-informacoes__nome {
+  font-size: 26px;
+}
+
+.minhas-informacoes__cargo {
+  color: #b8bbc5;
+  font-size: 20px;
+}
+
+.cartao__conteudo {
+  margin-top: 15px;
+}
+
+.conteudo__abas {
+  display: flex;
+}
+
+.abas__aba {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  transition: background-color 0.2s ease-in-out;
+  width: 50%;
+}
+
+.abas__aba img {
+  width: 30px;
+}
+
+.abas__aba.selecionado {
+  background-color: #262626;
+}
+
+.conteudo__informacoes-abas {
+  background-color: #262626;
+}
+
+.abas__aba:hover {
+  background-color: #414141;
+}
+
+.informacoes-abas__informacao {
+  display: none;
+  min-height: 260px;
+  padding: 15px;
+}
+
+.informacoes-abas__informacao.selecionado {
+  display: block;
+}
+
+.informacao__sub-titulo {
+  font-size: 22px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.informacao__descricao {
+  font-size: 20px;
+  max-height: 180px;
+  overflow-y: auto;
+  padding-right: 15px;
+}
+
+.informacao__descricao span {
+  color: #13a8fe;
+}
+
+.informacao__redes-sociais {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.informacao__redes-sociais li a {
+  color: #f3f3f3;
+  display: block;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  transition: opacity 0.3s ease-in-out;
+  width: 250px;
+}
+
+.informacao__redes-sociais li a:hover {
+  opacity: 0.8;
+}
+
+.redes-sociais__curriculo {
+  background-color: #06c185;
+}
+
+.redes-sociais__linkedin {
+  background-color: #1d87bd;
+}
+
+.redes-sociais__github {
+  background-color: #545454;
+}
