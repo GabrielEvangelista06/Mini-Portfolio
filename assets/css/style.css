@@ -19,6 +19,8 @@ body {
   border-radius: 10px;
   overflow: hidden;
   width: 370px;
+  transform: translateY(0px);
+  animation: float 5s ease-in-out infinite;
 }
 
 .cartao__minhas-informacoes {
@@ -138,4 +140,16 @@ body {
 
 .redes-sociais__github {
   background-color: #545454;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-35px);
+  }
+  10% {
+    transform: translateY(0);
+  }
 }
